@@ -10,18 +10,12 @@
  *
  * @param x Первое число
  * @param y Второе число
+ * @return возвращает больше ли разница между числами нуля
  */
 
 int srav(double x, double y)
 {
-    if (fabs(x - y) < EPS)
-    {
-        return 0;
-    }
-    else
-    {
-        return 1;
-    }
+    return (fabs(x - y) >= EPS);
 }
 
 /**
