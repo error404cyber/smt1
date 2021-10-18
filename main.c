@@ -10,6 +10,6 @@ int main()
     KORNI kor=LIN_ZERO;
     scan_coefficients(&a, &b, &c);
     run_all_tests();
-    printf("Ready");
+    printf("Ready\n");
     return 0;
 }
