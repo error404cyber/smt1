@@ -1,3 +1,13 @@
+typedef enum
+{
+    KV_ONE,
+    KV_TWO, 
+    KV_ZERO,
+    LIN_ONE, 
+    LIN_ZERO,
+    LIN_INF
+} KORNI;
+
 int srav(double x, double y);
 void scan_coefficients(double *ptr_to_a, double *ptr_to_b, double *ptr_to_c);
 void discr(double a, double b, double c, double *D);
