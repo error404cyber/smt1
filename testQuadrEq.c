@@ -4,9 +4,8 @@
 #include <math.h>
 
 void run_all_tests() { assert(OK == test_discr()); 
-                      assert(OK == test_kv()); 
-                      assert(OK == test_ln()); 
-                     }
+                       assert(OK == test_kv()); 
+                       assert(OK == test_ln()); }
 
 Error test_discr() {
   double test_value = 1, test_a = 1, test_b = 3, test_c = 2, test_d = 0;
