@@ -1,3 +1,5 @@
+const double EPS = 1E-10;
+
 typedef enum
 {
     KV_ONE,
