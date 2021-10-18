@@ -129,7 +129,7 @@ KORNI resh(double a, double b, double c, double *x1, double *x2)
     if (srav(a, 0))
     {
         discr(a, b, c, &d);
-        if (d < 0)
+        if (d < EPS)
         {
             return KV_ZERO;
         } //нет корней в квадратном
