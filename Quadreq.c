@@ -13,7 +13,7 @@
  * @return возвращает больше ли разница между числами нуля
  */
 
-int srav(double x, double y)
+int isEqual(double x, double y)
 {
     return (fabs(x - y) >= EPS);
 }
@@ -87,14 +87,14 @@ void resh_kv(double a, double b, double c, double d, double *x1, double *x2)
 KORNI resh_lin(double b, double c, double *x1)
 {
     assert(x1 != NULL);
-    if (srav(b, 0))
+    if (isEqual(b, 0))
     {
         *x1 = (-1) * c / b;
         return LIN_ONE;
     } 
     else
     {
-        if (srav(c, 0))
+        if (isEqual(c, 0))
         {
             return LIN_ZERO;
         }
@@ -120,7 +120,7 @@ KORNI resh(double a, double b, double c, double *x1, double *x2)
     assert(x1 != NULL);
     assert(x2 != NULL);
     double d = 0;
-    if (srav(a, 0))
+    if (isEqual(a, 0))
     {
         discr(a, b, c, &d);
         if (d < EPS)
