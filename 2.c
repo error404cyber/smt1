@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
 #include <math.h>
+#include "lib.h"
 
 const double EPS = 1E-10;
 
